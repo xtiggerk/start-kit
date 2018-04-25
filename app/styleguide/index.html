@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/dev_atlas-prism.css"/>
 
 <meta charset="utf-8">
-<title>SQLI Intranet</title>
+<title>Starter-kit</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.gif?v=1"/>
@@ -368,7 +368,101 @@
         <main class="atlas-landing__main">
             <section>
                 <!-- this is hacky, but we have sections in markdown, so we need to open and close it on wrapper -->
-                
+                <p class="atlas atlas-p">Starter kit built with gulp :</p>
+<ul class="atlas atlas-ul">
+	<li>serve the project on localhost:8080</li>
+<li>watch and reload html / scss / js files</li>
+<li>offering html / js templating</li>
+<li>auto generated styleguide base on style (/styleguide)</li>
+
+</ul>
+<p class="atlas atlas-p">Init project :</p>
+<ul class="atlas atlas-ul">
+	<li>npm install</li>
+<li>gulp serve</li>
+
+</ul>
+<p class="atlas atlas-p">(@todo: edit config.json &amp; package.json if you use different path)</p>
+<p class="atlas atlas-p">Atlas-guide (<a href="https://github.com/dimanech/atlas-guide">https://github.com/dimanech/atlas-guide</a>) :
+  Config option :
+  {
+      &quot;guideSrc&quot;: &quot;path/to/components/directory/&quot;,
+      &quot;guideDest&quot;: &quot;path/where/atlas/will/be/placed/&quot;,
+      &quot;cssSrc&quot;: &quot;path/to/css/&quot;,
+      &quot;scssSrc&quot;: &quot;path/to/scss/&quot;,
+      &quot;scssAdditionalImportsArray&quot;: &quot;&quot;,
+      &quot;componentPrefixes&quot;: [&quot;b-&quot;, &quot;l-&quot;],
+      &quot;excludedCssFiles&quot;: &quot;dev_&quot;,
+      &quot;excludedSassFiles&quot;: &quot;dev_&quot;,
+      &quot;excludedDirs&quot;: &quot;dev_&quot;,
+      &quot;copyInternalAssets&quot;: true,
+      &quot;templates&quot;: {
+          &quot;about&quot;: &quot;&quot;,
+          &quot;bundle&quot;: &quot;&quot;,
+          &quot;component&quot;: &quot;&quot;,
+          &quot;guide&quot;: &quot;&quot;,
+          &quot;insights&quot;: &quot;&quot;,
+          &quot;styleguide&quot;: &quot;&quot;
+      },
+      &quot;includes&quot;: {
+          &quot;aside&quot;: &quot;&quot;,
+          &quot;assetsfooter&quot;: &quot;&quot;,
+          &quot;assetshead&quot;: &quot;&quot;,
+          &quot;componentstataside&quot;: &quot;&quot;,
+          &quot;componentstatfooter&quot;: &quot;&quot;,
+          &quot;componentstatstructure&quot;: &quot;&quot;,
+          &quot;copyright&quot;: &quot;&quot;,
+          &quot;footer&quot;: &quot;&quot;,
+          &quot;header&quot;: &quot;&quot;,
+          &quot;logo&quot;: &quot;&quot;,
+          &quot;navigation&quot;: &quot;&quot;,
+          &quot;toc&quot;: &quot;&quot;,
+          &quot;welcome&quot;: &quot;&quot;
+      },
+      &quot;projectConstants&quot;: {
+          &quot;constantsSrc&quot;: &quot;path/to/project-settings.scss&quot;,
+          &quot;colorPrefix&quot;: &quot;color&quot;,
+          &quot;fontPrefix&quot;: &quot;font&quot;,
+          &quot;scalePrefix&quot;: &quot;scale&quot;,
+          &quot;spacePrefix&quot;: &quot;space&quot;,
+          &quot;motionPrefix&quot;: &quot;motion&quot;,
+          &quot;depthPrefix&quot;: &quot;depth&quot;,
+          &quot;breakpointPrefix&quot;: &quot;break&quot;
+      }
+  }</p>
+<p class="atlas atlas-p">  Code Documentation :
+    /*md</p>
+<div class="atlas atlas-code ">
+<pre><code class="language-">  # Heading level 1
+
+  ## Heading level 2
+
+  ## Heading level 3
+
+  Regular paragraph with **bold**, _italic_ and &#x60;inline code&#x60;.
+
+  * list item
+  * list item
+  * list item
+
+  1. ordered list item
+  2. ordered list item
+  3. ordered list item
+
+  etc.
+
+  &#x60;&#x60;&#x60;html
+  &lt;h1&gt;heading 1&lt;&#x2F;h1&gt;
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;scss
+  .some { maring: 0; }
+  &#x60;&#x60;&#x60;
+
+  {{#inline}}assets&#x2F;src&#x2F;images&#x2F;icons.svg{{&#x2F;inline}}
+*&#x2F;</code></pre>
+</div>
+
             </section>
         </main>
         <div class="atlas-landing__aside">

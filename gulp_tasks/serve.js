@@ -31,9 +31,9 @@ gulp.task('serve', ['styles', 'scripts', 'fonts', 'extend'], function () {
   gulp.watch( config.src + config.assets.styles.scss + "**/*.scss", ['styles', 'atlas-build'] );
 
   // //watch templates
-  // gulp.watch( config.src + 'templates/**/*.html', ['extend']);
+  gulp.watch( config.src + 'templates/**/*.html', ['extend']);
 
-  // gulp.watch( config.src + config.assets.scripts + '**/*.js', ['scripts']);
+  gulp.watch( config.src + config.assets.scripts + '**/*.js', ['scripts']);
 
   // Watcher for (HTML + js + assets) update
   gulp.watch([
