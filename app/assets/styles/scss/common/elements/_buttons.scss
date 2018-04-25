@@ -1,0 +1,34 @@
+/*md
+
+# Buttons
+
+## Primary button
+
+```html_example
+<button>Some Button</button>
+```
+
+## Secondary button
+
+```html_example
+<button class="is-secondary">Some Button</button>
+```
+*/
+
+button {
+  background: $color-blue;
+  color: white;
+  padding: 1.5rem;
+
+  &:hover {
+    background: none;
+    border: 1px solid blue;
+    color: blue;
+  }
+
+  &.is-secondary {
+    background: none;
+    border: 1px solid blue;
+    color: blue;  
+  }
+}

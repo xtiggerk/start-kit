@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Include common styles
+   ========================================================================== */
+
+
+/* configuration */
+
+@import "config/_config.scss";
+
+/* fonts */
+
+@import "fonts/_fonts";
+
+/* utils */
+
+@import "utils/_utils.scss";
+
+/* components */
+
+@import "elements/_elements.scss";
+
+/* components */
+
+@import "components/_components.scss";
+
+/* views */
+
+@import "views/_views.scss";

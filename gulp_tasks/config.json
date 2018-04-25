@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "src": "app/",
+  "dist": "dist/",
+  "serve": {
+    "open": true,
+    "browser": "chrome",
+    "port": 8080
+  },
+  "assets" : {
+    "data": "assets/data/",
+    "fonts": "assets/fonts/",
+    "images": "assets/images/",
+    "scripts": "assets/scripts/",
+    "styles": {
+      "scss": "assets/styles/scss/",
+      "css": "assets/styles/"
+    }
+  },
+  "templates": "templates/partials/",
+  "styleguide": "app/styleguide/"
+}

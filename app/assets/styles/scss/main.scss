@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Import rules : files syntax => @import 'filename'
+   ========================================================================== */
+/* common */
+@import "common/_common.scss";
+
+/*----------------------------------------------------------------
+	Global styles
+	-----------------------------------------------------------------*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 100%;
+  -ms-overflow-style: scrollbar; // prevent ie10 / ie11 scrollbar overlay
+}
+
+body {
+  font-size: 100%; // respecte la root font size définie par le navigateur (soit 16px en général).
+  font-family: 'Arial';
+  font-size: 13px;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+

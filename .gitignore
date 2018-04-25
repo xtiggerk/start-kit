@@ -1,0 +1,24 @@
+.idea/
+
+# Node modules
+node_modules/
+
+# Bower packages
+bower_components/
+
+# Livraison
+dist/
+
+# Built CSS files
+app/assets/styles/*.css
+!app/assets/styles/slick.css
+!app/assets/styles/fullcalendar.min.css
+
+#Extend html
+app/*.html
+
+# Built map files
+*.map
+
+# Built JS files
+app/assets/scripts/concat.js
