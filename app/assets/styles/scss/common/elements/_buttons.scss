@@ -5,30 +5,134 @@
 ## Primary button
 
 ```html_example
-<button>Some Button</button>
+<button class="button e--primary">Primary Button align left</button>
+<button class="button e--primary e--center e--lightblue">Primary Button align center</button>
+<button class="button e--primary e--turquoise">Primary Button align center</button>
 ```
 
 ## Secondary button
 
 ```html_example
-<button class="is-secondary">Some Button</button>
+<button class="button e--secondary">Some Button</button>
+<button class="button e--secondary e--lightturquoise">Secondary Button align right</button>
+<button class="button e--secondary e--right e--lightblue">Secondary Button align right</button>
+<button class="button e--secondary e--right e--blue">Secondary Button align right</button>
 ```
 */
 
-button {
-  background: $color-blue;
-  color: white;
-  padding: 1.5rem;
+.button, a.button {
+  color: $color-lightblue;
+  font-family: $font-roboto-bold;
+  padding: $space-m;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0);
 
-  &:hover {
-    background: none;
-    border: 1px solid blue;
-    color: blue;
+  &.e--lightblue, &.e--turquoise, &.e--blue {
+    color: $color-white;
   }
 
-  &.is-secondary {
-    background: none;
-    border: 1px solid blue;
-    color: blue;  
+  &.e--verylightblue {
+    &:before {
+      background: $color-verylightblue;
+    }
+  }
+
+  &.e--lightblue {
+    &:before {
+      background: $color-lightblue;
+    }
+  }
+
+  &.e--blue {
+    &:before {
+      background: $color-blue;
+    }
+  }
+
+  &.e--lightturquoise {
+    &:before {
+      background: $color-lightturquoise;
+    }
+  }
+
+  &.e--turquoise {
+    &:before {
+      background: rgba($color-turquoise, .35);
+    }
+  }
+
+  &:before {
+    background: $color-lightorange;
+    border-radius: 50%;
+    content: "";
+    left: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: $depth-back;
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+  }
+
+  &.e--right {
+    float: right;
+    &:before {
+      left: inherit;
+      right: 0;
+    }
+
+    &:hover {
+      &:before {
+        transform: translate(0, -50%);
+      }
+    }
+  }
+
+  &.e--center {
+    &:before {
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.e--primary {
+    font-size: $scale-s;
+    letter-spacing: 1.8px;
+    line-height: 1.3rem;
+
+    &:before {
+      $buttonSize: 60px;
+      height: $buttonSize;
+      width: $buttonSize;
+    }
+
+    &:hover {
+      &:before {
+        border-radius: 40px;
+        width: 100%;
+        transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &.e--secondary {
+    font-size: $scale-xs;
+    letter-spacing: 1.5px;
+    line-height: 1rem;
+
+    &:before {
+      $buttonSize: 30px;
+      height: $buttonSize;
+      width: $buttonSize;
+    }
+
+    &:hover {
+      &:before {
+        border-radius: 40px;
+        width: 100%;
+        transition: width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+      }
+    }
   }
 }

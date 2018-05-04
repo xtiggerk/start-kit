@@ -1,0 +1,51 @@
+/*md
+
+# Images
+
+## Normal Images
+
+```html_example
+  <div class="image-wrapper">
+      <img src='../assets\images\placeholder.jpeg'/>
+  </div>
+```
+
+## Rounded Images
+
+```html_example
+  <div class="image-wrapper e--rounded">
+    <img src='../assets\images\placeholder.jpeg'/>
+  </div>
+```
+
+## Rounded Images
+```html_example
+<div class="circle-text"><div>I'm a Circle!</div></div>
+```
+*/
+
+.image-wrapper {
+  overflow: hidden;
+  position: relative;
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &.e--rounded {
+    border-radius: 50%;
+    margin: auto;
+
+    //For responsive rounded image
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }   
+    
+    img {
+      position: absolute;
+    }
+  }
+}

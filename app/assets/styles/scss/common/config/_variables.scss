@@ -1,7 +1,47 @@
-$color-violet: #594199;
-$color-fuchsia: #bc1f8c;
-$color-blue: blue;
-$scale-sm: 0.8rem;
-$scale-md: 1rem;
+/* ------ Greyscale ------ */
+$color-white: white;
+$color-darkwhite: #F7F7F7;
+$color-verylightgrey: #E6E6E6;
+$color-lightgrey: #E1E1E1;
+$color-grey: #C0C0C0;
+$color-darkgrey: #999999;
+$color-verydarkgrey: #666666;
 
+/* ------ Color ------ */
+$color-lightorange: #FFD49C;
+$color-orange: #E68A2E;
+$color-lightturquoise: #D9F9F5;
+$color-turquoise: #40E3CB;
+$color-verylightblue: #B9E2F3;
+$color-lightblue: #217193;
+$color-blue: #0D4F6A;
+$color-darkblue: #023043;
 
+/* ------ Fonts ------ */
+$font-roboto: 'roboto';
+$font-roboto-thin: 'robotoThin';
+$font-roboto-bold: 'robotoBold';
+$font-lora: 'lora';
+$font-lora-italic: 'loraItalic';
+
+/* ------ Breakpoints ------ */
+$break-mobile: 767px;
+$break-tablet: 1024px;
+$break-desktop: 1367px;
+
+/* ------ Scale ------ */
+$scale-l: 1.6rem;
+$scale-m: 1.3rem;
+$scale-s: 1.1rem;
+$scale-xs: .9rem;
+
+/* ------ Space ------ */
+$space-s: .5rem;
+$space-m: 1.5rem;
+$space-l: 2.5rem;
+$space-xl: 3.5rem;
+
+/* ------ Depth ------ */
+$depth-back: -1;
+$depth-reg: 0;
+$depth-front: 10;

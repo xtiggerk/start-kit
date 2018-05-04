@@ -1,0 +1,193 @@
+/*md
+
+# Input
+
+## Checkbox
+
+```html_example
+<ul class="list-unstyled list-inline">
+  <li>
+    <input type="checkbox" id="checkbox-1"/>
+    <label for="checkbox-1">Checkbox n°1</label>
+  </li>
+  <li>
+    <input type="checkbox" id="checkbox-2" checked/>
+    <label for="checkbox-2">Checkbox n°2</label>
+  </li>
+</ul>
+```
+
+## Radio button
+
+```html_example
+<ul class="list-unstyled list-inline">
+  <li>
+    <input type="radio" id="radio-1" name="radio"/>
+    <label for="radio-1">Radio Button n°1</label>
+  </li>
+  <li>
+    <input type="radio" id="radio-2" name="radio"/>
+    <label for="radio-2">Radio Button n°2</label>
+  </li>
+</ul>
+```
+
+## Input
+
+```html_example
+<div gy="g">
+  <div gy="c-4">
+    <div class="form-item">
+      <label for="input-text">I'am a label</label>
+      <input id="input-text" type="text" placeholder="I am a placeholder"/>
+    </div>
+  </div>
+  <div gy="c-4">
+    <div class="form-item">
+      <label for="input-email">I'am a label</label>
+      <input id="input-email" type="email" placeholder="I am a placeholder" required/>
+      <div class="requirements">
+        I am an error generated on drupal form
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+## Select
+
+```html_example
+  <div class="custom-select has-placeholder">
+    <select>
+      <option value="placeholder">Placeholder for select</option>
+      <option value="value1">Option n°1</option>
+      <option value="value2">Option n°2</option>
+      <option value="value3">Option n°3</option>
+      <option value="value4">Option n°4</option>
+      <option value="value5">Option n°5</option>
+    </select>
+  </div>
+```
+*/
+
+$checkSize: 10px;
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+
+  & ~ label {
+    color: $color-verydarkgrey;
+    @include font-manager(regular, m);
+    position: relative;
+
+    &:before {
+      background: none;
+      border: 1px solid $color-darkgrey;
+      content: '';
+      display: inline-block;
+      height: $checkSize;
+      margin-right: $space-s;
+      width: $checkSize;
+    }
+  }
+
+  &:checked {
+    & ~ label {
+      &:before {
+        background: $color-lightblue;
+      }
+
+      &:after {
+        left: 1px;
+        position: absolute;
+        top: 3px;
+      }
+    }
+  }
+}
+
+input[type="checkbox"] {
+  &:checked {
+    & ~ label {
+      &:before {
+        background: $color-lightblue;
+      }
+      &:after {
+        color: $color-white;
+        content: '\2713';
+        font-size: .9rem;
+        padding-top: 2px;
+        top: inherit;
+      }
+    }
+  }
+}
+
+input[type="radio"] {
+  & ~ label {
+    &:before {
+      border-radius: 50%;
+    }
+  }
+
+  &:checked {
+    & ~ label {
+      &:before {
+        border-color: $color-lightblue;
+      }
+      &:after {
+        background: $color-lightblue;
+        border: 1px solid $color-white;
+        border-radius: 50%;
+        content: '';
+        height: calc(#{$checkSize} - 2px);
+        width: calc(#{$checkSize} - 2px);
+      }
+    }
+  }
+}
+
+
+.form-item {
+  label {
+    display: block;
+    margin-bottom: $space-s;
+  }
+
+  input {
+    border: 1px solid $color-verylightgrey;
+    color: $color-verydarkgrey;
+    @include font-manager(regular, m);
+    padding: $space-m;
+    width: 100%;
+  
+    &::placeholder {
+      color: $color-grey;
+    }
+  
+    &:not(:placeholder-shown), &:focus {
+      border: 1px solid $color-grey;
+      outline: none;
+    }
+  
+    &:invalid {
+      border: 1px solid $color-orange;
+      color: $color-orange;
+    }
+  }
+
+  .requirements {
+    color: $color-orange;
+    @include font-manager(regular, s);
+    margin-top: $space-s;
+
+    &:before {
+      content: '*';
+      display: inline-block;
+    }
+  }
+}
+
+
+
+

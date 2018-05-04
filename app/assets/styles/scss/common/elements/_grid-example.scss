@@ -1,0 +1,312 @@
+/*md
+
+# Gridy Example
+
+
+## Basic Grid
+
+### Add gy="g" to the parent and gy="c" to the children, and the columns will get automagically equal width size.
+
+```html_example
+<div class="grid-example">
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+</div>
+```
+
+## Nesting
+### Another feature of Gridy is the possibility of nesting directly inside the columns (again, without adding rows!).
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g">
+      <div gy="c-6"><div class="doc__box"></div></div>
+      <div gy="c-6 g">
+        <div gy="c-12"><div class="doc__box"></div></div>
+        <div gy="c-6"><div class="doc__box"></div></div>
+        <div gy="c-6 g">
+          <div gy="c-12"><div class="doc__box"></div></div>
+          <div gy="c-4"><div class="doc__box"></div></div>
+          <div gy="c-4"><div class="doc__box"></div></div>
+          <div gy="c-4 g">
+            <div gy="c-12"><div class="doc__box"></div></div>
+            <div gy="c-6"><div class="doc__box"></div></div>
+            <div gy="c-6"><div class="doc__box"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+
+
+## No-Gutter Grid
+
+### Remove the gutter from the grid by adding g-no-gutter.
+```html_example
+<div class="grid-example">
+<div gy="g" gy-h="g-no-gutter">
+      <div gy="c-12"><div class="doc__box"></div></div>
+      <div gy="c-6"><div class="doc__box"></div></div>
+      <div gy="c-6"><div class="doc__box"></div></div>
+      <div gy="c-4"><div class="doc__box"></div></div>
+      <div gy="c-8"><div class="doc__box"></div></div>
+      <div gy="c-3"><div class="doc__box"></div></div>
+      <div gy="c-9"><div class="doc__box"></div></div>
+    </div>
+</div>
+```
+
+## Horizontal Alignement
+
+### Apply horizontal alignment by adding g-left, g-center, g-right.
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g-3">
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g-3" gy-h="g-center">
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+    <div gy="g-3" gy-h="g-right">
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+  </div>
+```
+## Horizontal distribution
+
+### Apply horizontal distribution by adding g-space-around or g-space-between.
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g-6" gy-h="g-space-around">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+
+    <!-- separator -->
+    <div gy="g"><div gy="c"><br></div></div>
+
+    <div gy="g-6" gy-h="g-space-between">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Vertical alignment, grid level
+
+### Apply vertical alignment by adding g-top, g-middle, g-bottom.
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"><br><br></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+
+    <!-- separator -->
+    <div gy="g"><div gy="c"><br></div></div>
+
+    <div gy="g" gy-h="g-middle">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"><br><br></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+
+    <!-- separator -->
+    <div gy="g"><div gy="c"><br></div></div>
+
+    <div gy="g" gy-h="g-bottom">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"><br><br></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Vertical alignment, column level
+
+### Apply vertical alignment by adding c-top, c-middle, c-bottom.
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g" style="height: 140px;">
+      <div gy="c" gy-h="c-top"><div class="doc__box"></div></div>
+      <div gy="c" gy-h="c-middle"><div class="doc__box"></div></div>
+      <div gy="c" gy-h="c-bottom"><div class="doc__box"></div></div>
+      <div gy="c" gy-h="c-bottom"><div class="doc__box"></div></div>
+      <div gy="c" gy-h="c-middle"><div class="doc__box"></div></div>
+      <div gy="c" gy-h="c-top"><div class="doc__box"></div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Flow and ordering
+
+### In the example below, the first grid has normal flow, the second grid is reversed g-reverse, the third grid has first and last columns inverted c-last c-first, the forth has very specific ordering order-n*.
+
+Also, note that in the ordering you can use responsive breakpoints: order-2 order-s-1 order-m-3.
+
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g">
+      <div gy="c"><div class="doc__box">a</div></div>
+      <div gy="c"><div class="doc__box">b</div></div>
+      <div gy="c"><div class="doc__box">c</div></div>
+      <div gy="c"><div class="doc__box">d</div></div>
+      <div gy="c"><div class="doc__box">e</div></div>
+    </div>
+    <div gy="g" gy-h="g-reverse">
+      <div gy="c"><div class="doc__box">a</div></div>
+      <div gy="c"><div class="doc__box">b</div></div>
+      <div gy="c"><div class="doc__box">c</div></div>
+      <div gy="c"><div class="doc__box">d</div></div>
+      <div gy="c"><div class="doc__box">e</div></div>
+    </div>
+    <div gy="g">
+      <div gy="c" gy-h="c-last"><div class="doc__box">a</div></div>
+      <div gy="c"><div class="doc__box">b</div></div>
+      <div gy="c"><div class="doc__box">c</div></div>
+      <div gy="c"><div class="doc__box">d</div></div>
+      <div gy="c" gy-h="c-first"><div class="doc__box">e</div></div>
+    </div>
+    <div gy="g">
+      <div gy="c" gy-h="order-m-2"><div class="doc__box">a</div></div>
+      <div gy="c" gy-h="order-m-1"><div class="doc__box">b</div></div>
+      <div gy="c" gy-h="order-m-4"><div class="doc__box">c</div></div>
+      <div gy="c" gy-h="order-m-3"><div class="doc__box">d</div></div>
+      <div gy="c" gy-h="order-m-6"><div class="doc__box">e</div></div>
+      <div gy="c" gy-h="order-m-5"><div class="doc__box">f</div></div>
+      <div gy="c" gy-h="order-m-8"><div class="doc__box">g</div></div>
+      <div gy="c" gy-h="order-m-7"><div class="doc__box">h</div></div>
+      <div gy="c" gy-h="order-m-10"><div class="doc__box">i</div></div>
+      <div gy="c" gy-h="order-m-9"><div class="doc__box">j</div></div>
+      <div gy="c" gy-h="order-m-12"><div class="doc__box">k</div></div>
+      <div gy="c" gy-h="order-m-11"><div class="doc__box">l</div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Equal height
+
+### Apply equal height by adding g-equal-height.
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g-3" gy-h="g-equal-height">
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam inventore minima facere possimus quisquam.</p> </div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c"><div class="doc__box"></div></div>
+      <div gy="c g" gy-h="g-equal-height">
+        <div gy="c"><div class="doc__box"></div></div>
+        <div gy="c"><div class="doc__box"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> </div></div>
+        <div gy="c"><div class="doc__box"></div></div>
+      </div>
+      <div gy="c"><div class="doc__box"></div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Column direction
+
+### Apply column direction with g-column. Reverse the column with g-column-reverse
+```html_example
+<div class="grid-example">
+<div class="doc__grid">
+    <div gy="g" gy-h="g-column">
+      <div gy="c-4"><div class="doc__box">a</div></div>
+      <div gy="c-2"><div class="doc__box">b</div></div>
+      <div gy="c-6"><div class="doc__box">c</div></div>
+    </div>
+
+    <!-- separator -->
+    <div gy="g"><div gy="c"><br></div></div>
+
+    <div gy="g" gy-h="g-column-reverse">
+      <div gy="c-4"><div class="doc__box">a</div></div>
+      <div gy="c-2"><div class="doc__box">b</div></div>
+      <div gy="c-6"><div class="doc__box">c</div></div>
+    </div>
+  </div>
+</div>
+```
+
+## Offset
+
+### Apply column offset with off-n*. You can also use responsive breakpoints, for example off-6 off-s-10.
+```html_example
+<div class="grid-example">
+  <div class="doc__grid">
+    <div gy="g">
+      <div gy="c-2" gy-h=""><div class="doc__box"></div></div>
+      <div gy="c-2" gy-h="off-3"><div class="doc__box"></div></div>
+      <div gy="c-2" gy-h="off-3"><div class="doc__box"></div></div>
+      <div gy="c-2" gy-h="off-m-2"><div class="doc__box"></div></div>
+      <div gy="c-2" gy-h="off-m-1"><div class="doc__box"></div></div>
+      <div gy="c-2" gy-h="off-m-1"><div class="doc__box"></div></div>
+    </div>
+  </div>
+</div>
+```
+
+*/
+
+.grid-example {
+  div[class*="doc__box"] {
+    background: #217193;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+  }
+}

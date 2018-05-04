@@ -1,0 +1,25 @@
+/*md
+
+# Headings Components
+
+## Headings
+
+```html_example
+<div class="c-divider">
+<h5>Heading h5</h5>
+</div>
+```
+*/
+
+.c-divider {
+  align-items: center;
+  display: flex;
+  &:after {
+    background: $color-darkgrey;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    flex: 1;
+    margin-left: $space-m;
+  }
+}

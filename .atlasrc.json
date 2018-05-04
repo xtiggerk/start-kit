@@ -1,0 +1,19 @@
+{
+    "guideSrc": "./app/assets/styles/scss/",
+    "guideDest": "./app/styleguide/",
+    "cssSrc": "./app/assets/styles/",
+    "scssSrc": "./app/assets/styles/scss",
+    "partials": {
+    "assetshead": "./app/styleguide/head.mustache",
+    "assetsfooter": "./app/styleguide/footer.mustache"
+    },
+    "projectConstants": {
+    "constantsSrc": "/app/assets/styles/scss/common/config/_variables.scss",
+    "colorPrefix": "color",
+    "fontPrefix": "font",
+    "scalePrefix": "scale",
+    "spacePrefix": "space",
+    "breakpointPrefix": "break",
+    "depthPrefix": "depth"
+    }
+}

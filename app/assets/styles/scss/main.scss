@@ -14,14 +14,14 @@ html, body {
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;  
   -ms-overflow-style: scrollbar; // prevent ie10 / ie11 scrollbar overlay
 }
 
 body {
-  font-size: 100%; // respecte la root font size définie par le navigateur (soit 16px en général).
-  font-family: 'Arial';
+  font-family: $font-roboto;
   font-size: 13px;
+  font-size: 1.3rem;
 }
 
 *, *:after, *:before {

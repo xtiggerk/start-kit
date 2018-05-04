@@ -15,7 +15,7 @@
     "atlas-guide": "^0.7.3",
     "browser-sync": "^2.11.0",
     "del": "^2.2.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.5.0",
@@ -31,19 +31,5 @@
     "gulp-useref": "^3.1.0",
     "require-dir": "^0.3.0",
     "wiredep": "^4.0.0"
-  },
-  "atlasConfig": {
-    "guideSrc": "/app/assets/styles/scss/",
-    "guideDest": "/app/styleguide/",
-    "cssSrc": "/app/assets/styles/",
-    "scssSrc": "/app/assets/styles/scss",
-    "partials": {
-      "assetshead": "./app/styleguide/_head.html"
-    },
-    "projectConstants": {
-      "constantsSrc": "/app/assets/styles/scss/common/config/_variables.scss",
-      "colorPrefix": "color",
-      "scalePrefix": "scale"
-    }
   }
 }

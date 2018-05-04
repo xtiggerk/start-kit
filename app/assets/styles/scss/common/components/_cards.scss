@@ -1,0 +1,353 @@
+/*md
+
+# Cards 
+
+## Cards Block
+
+```html_example
+<div gy="g">
+  <div gy="c-4">
+  <div class="c-card e--block">
+    <div class="c__heading">
+      <div class="c-date">
+        <b>12</b>
+        Avr.
+      </div>
+      <div class="image-wrapper e--rounded">
+        <img src='../assets\images\placeholder.jpeg'/>
+      </div>
+    </div>
+    <div class="c__content">
+      <h6>Bordeaux</h6>
+      <p>The advantage of minimal repair technique in the treatment for hernia</p>
+    </div>
+  </div>
+</div>
+<div gy="c-4">
+  <div class="c-card e--block">
+    <div class="c__heading">
+      <div class="c-date">
+        <b>12</b>
+        Avr.
+      </div>
+      <div class="image-wrapper e--rounded">
+        <img src='../assets\images\placeholder.jpeg'/>
+      </div>
+    </div>
+    <div class="c__content">
+      <h6>Bordeaux</h6>
+      <p>The advantage of minimal repair technique in the treatment for hernia</p>
+    </div>
+  </div>
+</div>
+<div gy="c-4">
+  <div class="c-card e--block">
+    <div class="c__heading">
+      <div class="c-date">
+        <b>12</b>
+        Avr.
+      </div>
+      <div class="image-wrapper e--rounded">
+        <img src='../assets\images\placeholder.jpeg'/>
+      </div>
+    </div>
+    <div class="c__content">
+      <h6>Bordeaux</h6>
+      <p>The advantage of minimal repair technique in the treatment for hernia</p>
+    </div>
+  </div>
+</div>
+</div>
+```
+## Cards Inline
+
+### Cards links Round
+```html_example
+<div gy="g">
+  <div gy="c-4">
+    <div class="c-card e--link e--ui-lightblue">
+      <div class="c__heading">
+        <div class="image-wrapper e--rounded">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <p>The advantage of minimal repair technique</p>
+        <div class="c-card__actions">
+          <a href="" class="button e--secondary e--right e--blue">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div gy="c-4">
+    <div class="c-card e--link e--ui-blue">
+      <div class="c__heading">
+        <div class="image-wrapper e--rounded">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <p>The advantage of minimal repair technique in the treatment for hernia</p>
+        <div class="c-card__actions">
+          <a href="" class="button e--secondary e--right e--lightblue">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div gy="c-4">
+    <div class="c-card e--link e--ui-darkblue">
+      <div class="c__heading">
+        <div class="image-wrapper e--rounded">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <p>The advantage of me</p>
+        <div class="c__actions">
+          <a href="" class="button e--secondary e--right e--blue">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Cards links Square
+```html_example
+<div gy="g">
+  <div gy="c-4">
+    <div class="c-card e--link e--squared">
+      <div class="c__heading">
+        <div class="image-wrapper">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <p>The advantage of minimal repair technique in the treatment for hernia</p>
+        <div class="c-card__actions">
+          <a href="" class="button e--secondary e--right e--lightturquoise">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div gy="c-4">
+    <div class="c-card e--link e--ui-blue e--squared">
+      <div class="c__heading">
+        <div class="image-wrapper">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <p>The advantage of minimal repair technique in the treatment for hernia</p>
+        <div class="c__actions">
+          <a href="" class="button e--secondary e--right e--lightblue">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div gy="c-8">
+    <div class="c-card e--link e--squared">
+      <div class="c__heading">
+        <div class="image-wrapper">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h6>Bordeaux</h6>
+        <h4>The advantage of minimal repair technique in the treatment for hernia</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse aliquet massa et volutpat luctus. Morbi eget imperdiet velit cras amet (…)</p>
+        <div class="c__actions">
+          <a href="" class="button e--secondary e--right">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Cards contact
+```html_example
+<div gy="g">
+  <div gy="c-4">
+    <div class="c-card e--link e--contact">
+      <div class="c__heading">
+        <div class="image-wrapper e--rounded">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h5>Jean-Michel AMOITIE
+        <span>Responsable métier</span>
+        </h5>
+        <p>The advantage of minimal repair technique in the treatment for hernia</p>
+      </div>
+    </div>
+  </div>
+
+  <div gy="c-4">
+    <div class="c-card e--link e--contact">
+      <div class="c__heading">
+        <div class="image-wrapper e--rounded">
+          <img src='../assets\images\placeholder.jpeg'/>
+        </div>
+      </div>
+      <div class="c__content">
+        <h5>Jean-Michel SYMPA
+        <span>Responsable métier</span>
+        </h5>
+        <p>The advantage of minimal repair technique in the treatment for hernia</p>
+        <div class="c__actions">
+          <a href="" class="button e--secondary e--right e--lightturquoise">I'm a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+*/
+
+.c-card {
+  border: 1px solid $color-lightgrey;
+  position: relative;
+  min-width: 340px;
+
+  .c__heading {
+    background: $color-darkwhite;
+    padding: $space-m $space-xl;
+    width: 100%;
+
+    & .c-date {
+      background: $color-white;
+      border: 1px solid $color-lightgrey;
+      border-left: none;
+      border-top: none;
+      border-bottom-right-radius: 50%;
+      color: $color-lightblue;
+      @include font-manager(regular, l);
+      left: 0;
+      line-height: 1.8rem;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+    
+      b {
+        display: block;
+      }
+    }
+  }
+
+  .c__content {
+    border-top: 1px solid $color-lightgrey;
+    @include font-manager(regular, l);
+    padding: $space-m $space-l;
+    width: 100%;
+
+    h4 {
+      color: $color-lightblue;
+      margin-bottom: $space-m;
+    }
+
+    h5 {
+      span {
+        display: block;
+        @include font-manager(regular, m);
+      }
+
+      &:after {
+        background: $color-lightgrey; 
+        content: '';
+        display: block;
+        height: 1px;
+        margin: $space-m 0;
+        width: 100%;
+      }
+    }
+
+    h6 {
+      color: $color-darkgrey;
+      @include font-manager(bold, s);
+      margin-bottom: $space-m;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+//Manage component declination color
+.c-card {
+  &.e--link {
+    display: flex;
+
+    &.e--squared {
+      .c__heading {
+        align-self: stretch;
+        padding: 0;
+
+        .image-wrapper {
+          height: 100%;
+        }
+      }
+    }
+
+    .c__heading {
+      align-self: center;
+      background: none;
+      padding: 2rem 0 2rem 2rem;
+      max-width: 35%;
+    }
+
+    .c__content {
+      border: none;
+    }
+  }
+
+  &.e--contact {
+    .c__content {
+      @include font-manager(regular, m);
+    }
+  }
+
+
+  &[class*="e--ui-"] {
+    background-image: url('../images/bg-pattern.png');
+    background-repeat: repeat; 
+    background-size: 30%;
+    color: $color-white;
+
+    .c__heading {
+      background: none;
+    }
+    .c__content {
+      h6 {
+        color: $color-lightturquoise;
+      }
+    }
+  }
+
+  &.e--ui-lightblue {
+    background-color: $color-lightblue;
+    border: 1px solid $color-blue;
+  }
+
+  &.e--ui-blue {
+    background-color: $color-blue;
+    border: 1px solid $color-lightblue;
+  }
+
+  &.e--ui-darkblue {
+    background-color: $color-darkblue;
+    border: 1px solid $color-blue;
+  }
+}
+
+

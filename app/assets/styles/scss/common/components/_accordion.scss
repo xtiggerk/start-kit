@@ -1,0 +1,58 @@
+/*md
+
+# Dropdown
+
+## Dropdown Select
+
+```html_example
+<form>
+    <div class="c-dropdown-select custom-select">
+        <input id="c-dropdown-select" type="checkbox"/>
+        <label for="c-dropdown-select">Trigger the accordion</label>
+        <div class="c__content select-selected">
+            I'm the content
+        </div>
+    </div>
+</form>
+```
+*/
+
+.c-dropdown-select {
+    display: block;
+    input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+  
+      &:checked {
+        + label {
+          cursor: initial;
+          width: inherit;
+          ~ .c__content {
+            height: auto;
+            width: auto;
+          }
+        }
+      }
+    }
+  
+    // Style label/entry for accordion
+    label {
+        border: 1px solid $color-verylightgrey;
+        color: $color-verydarkgrey;
+        @include font-manager(regular, m);
+        padding: $space-m;
+        width: 100%;
+
+        &:before, &:after {
+            display: none !important;
+        }
+    }
+  
+    // Style accordion content
+    .c__content {
+      height: 0;
+      overflow: hidden;
+      width: 0;
+    }
+  }
+  

@@ -22,7 +22,7 @@ var browserSync = require('browser-sync');
 gulp.task('styles', function () {
   return gulp.src( config.src + config.assets.styles.scss + '*.scss' )
     .pipe( sourcemaps.init() )
-    .pipe( sass() )
+    .pipe( sass().on('error', sass.logError))
     .pipe( autoprefixer({browsers: ['last 2 versions', '> 1%', 'not IE < 9']}) )
     .pipe( sourcemaps.write('./') )
     .pipe( gulp.dest(config.src + config.assets.styles.css) )

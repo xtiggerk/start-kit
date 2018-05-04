@@ -1,0 +1,101 @@
+/*md
+
+# Typography
+
+## Titles
+
+```html_example
+<h1>Heading H1</h1>
+<h1 class="e--light">Heading H1</h1>
+<h2>Heading H2</h2>
+<h2 class="e--blue">Heading H2</h2>
+<h3>Heading H3</h3>
+<h3 class="e--blue">Heading H3</h3>
+<h4>Heading H4</h4>
+<h4 class="e--blue">Heading H4</h4>
+<h5>Heading H5</h5>
+<h5 class="e--blue">Heading H5</h5>
+<h6>Heading H6</h6>
+<h6 class="e--blue">Heading H6</h6>
+
+```
+
+## Paragraph
+
+```html_example
+<p>Lorem ipsum</p>
+```
+
+## Blockquote
+```html_example
+<blockquote>This is an awesome quote by RJ.</blockquote>
+```
+
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-roboto-bold;
+  color: $color-verydarkgrey;
+
+  &.e--lightturquoise {
+    color: $color-lightblue;
+  }
+
+  &.e--blue {
+    color: $color-lightblue;
+  }
+
+  &.e--darkgrey {
+    color: $color-darkgrey;
+  }
+
+  &.e--grey {
+    color: $color-grey;
+  }
+}
+
+h1 {
+  font-size: 5.3rem;
+  line-height: 6.2rem;
+  &.e--light {
+    color: $color-white;
+    font-family: $font-roboto-thin;
+  }
+}
+
+h2 {
+  font-size: 4.3rem;
+  line-height: 4.8rem;
+}
+
+h3 {
+  font-size: 3.3rem;
+  line-height: 3.9rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+}
+
+b {
+  font-family: $font-roboto-bold;
+}
+
+blockquote {
+  color: $color-darkgrey;
+  font-family: $font-lora;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+}

@@ -1,0 +1,80 @@
+/*md
+
+# Lists
+
+## Normal List
+
+```html_example
+<ul>
+  <li>Element List on one line</li>
+  <li>Element List <br/> on two lines</li>
+</ul>
+```
+
+## List Unstyled
+
+```html_example
+<ul class="list-unstyled">
+  <li>Element List on one line</li>
+  <li>Element List <br/> on two lines</li>
+</ul>
+```
+
+## List Inline
+
+```html_example
+<ul class="list-inline">
+  <li>Element List on one line</li>
+  <li>Element List </li>
+</ul>
+
+<ul class="list-unstyled list-inline">
+  <li>Element List on one line</li>
+  <li>Element List </li>
+</ul>
+```
+*/
+
+ul {
+  @include font-manager(regular, l);
+  padding-left: 2.5rem;
+  li {
+    position: relative;
+    &:before {
+      $dot-size: 1rem;
+      background: $color-lightblue;
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      height: $dot-size;
+      left: -2rem;
+      position: absolute;
+      top: .5rem;
+      width: $dot-size;
+    }
+  }
+}
+
+.list-inline {
+  align-items: center;
+  display: flex;
+
+  li + li {
+    margin-left: $space-xl;
+  }
+
+  &:not(.list-unstyled) {
+    li + li {
+      margin-left: calc(2 * #{$space-xl});
+    }
+  }
+}
+
+.list-unstyled {
+  padding-left: 0;
+  li {
+    &:before {
+      display: none;     
+    }
+  }
+}
